@@ -10,4 +10,4 @@ print(n1, nb, n2, n3, n4)
 
 # Entrada de datos
 nombre = input('Ingrese su nombre: ')
-print('Nombre ingresado:', nombre)
+print(f'Nombre ingresado {nombre}')
