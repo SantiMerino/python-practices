@@ -2,25 +2,25 @@
 # Cada lista representa las 12 ventas mensuales de cada sucursal
 
 # ventas quemadas para pruebas
-ventas = [
-[1200, 1350, 1100, 1500, 980, 1150, 1250, 1300, 1500, 1600, 1550, 1700],
-[980, 1150, 1250, 1300, 1200, 1350, 1100, 1500, 1200, 1350, 1100, 1500],
-[1500, 1600, 1550, 1700, 1200, 1350, 1100, 1500, 1500, 1600, 1550, 1700],
-[1200, 1350, 1100, 1500, 980, 1150, 1250, 1300, 1500, 1600, 1550, 1700],
-[1200, 1350, 1100, 1500, 980, 1150, 1250, 1300, 1500, 1600, 1550, 1700]]
+# ventas = [
+# [1200, 1350, 1100, 1500, 980, 1150, 1250, 1300, 1500, 1600, 1550, 1700],
+# [980, 1150, 1250, 1300, 1200, 1350, 1100, 1500, 1200, 1350, 1100, 1500],
+# [1500, 1600, 1550, 1700, 1200, 1350, 1100, 1500, 1500, 1600, 1550, 1700],
+# [1200, 1350, 1100, 1500, 980, 1150, 1250, 1300, 1500, 1600, 1550, 1700],
+# [1200, 1350, 1100, 1500, 980, 1150, 1250, 1300, 1500, 1600, 1550, 1700]]
 
 
 
 
 # Matriz de ventas mensuales de 5 sucursales
-# ventas = []
-# for i in range(5):
-#     filas = input(f'Ingrese las ventas mensuales de la sucursal {i+1} separadas por comas: ')
-#     ventas.append(list(map(int, filas.split(','))))
-#     total_anual.append(sum(ventas[i]))
-# print(ventas)
 
-
+ventas = []
+for i in range(5):
+    filas = input(f'Ingrese las ventas mensuales de la sucursal {i+1} separadas por comas: ')
+    ventas.append(list(map(int, filas.split(','))))
+    # total_anual.append(sum(ventas[i]))
+print(ventas)
+print('-----------------------------------------------')
 total_anual = []
 for i in range(5):
     # ! Sumamos las ventas mensuales de cada sucursal para obtener el total anual v_sucursal = enero + febrero + ... + diciembre
