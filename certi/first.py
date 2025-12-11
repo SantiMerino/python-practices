@@ -27,5 +27,6 @@ def count_valid_passwords(passwords):
 if __name__ == "__main__":
  n = int(input("Ingrese la cantidad de contraseñas: ").strip())
  passwords = [input(f"Ingrese la contraseña {_ + 1}: ").rstrip("\n") for _ in range(n)]
+ print(passwords)
  print("La cantidad de contraseñas válidas es: ", count_valid_passwords(passwords))
 
